@@ -1,10 +1,11 @@
 /* Variables for quick configuration */
 :root 
 {
-    --expanded-width: 250px;
-    --collapsed-width: 50px;
-    --transition-duration: 0.25s;
-    --transistion-animation: ease-in-out;
+    --expanded-width: 250px; /* Width to expand at */
+    --collapsed-width: 50px; /* Width to collapse at */
+    --transition-duration: 0.25s; /* Duration of the transition */
+    --transistion-animation: ease-in-out; /* Animation of the transition */
+    --background: #000000; /* Background color, fixes weird glitch when out of focus */
 }
 
 /* Auto-expand for experimental vertical tabs feature */
@@ -12,11 +13,13 @@
 {
     width: var(--collapsed-width) !important;
     transition: width var(--transition-duration) var(--transistion-animation) !important;
+    background: var(--background) !important;
 }
 
 #sidebar-main:hover 
 {
     width: var(--expanded-width) !important;
+    background: var(--background) !important;
 }
 
 /* Move navigation buttons to beginning, switch them around. */
