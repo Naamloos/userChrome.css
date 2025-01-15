@@ -1,0 +1,20 @@
+/* Variables for quick configuration */
+:root 
+{
+    --expanded-width: 250px;
+    --collapsed-width: 50px;
+    --transition-duration: 0.25s;
+    --transistion-animation: ease-in-out;
+}
+
+/* Auto-expand for experimental vertical tabs feature */
+#sidebar-main 
+{
+    width: var(--collapsed-width) !important;
+    transition: width var(--transition-duration) var(--transistion-animation) !important;
+}
+
+#sidebar-main:hover 
+{
+    width: var(--expanded-width) !important;
+}
