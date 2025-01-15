@@ -18,3 +18,20 @@
 {
     width: var(--expanded-width) !important;
 }
+
+/* Move navigation buttons to beginning, switch them around. */
+#forward-button
+{
+    order: -1;
+}
+
+#back-button 
+{
+    order: -2;
+}
+
+/* Hide the sidebar button */
+#sidebar-button
+{
+    display: none;
+}
