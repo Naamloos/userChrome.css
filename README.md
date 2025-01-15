@@ -8,7 +8,7 @@ To use this userChrome.css, copy it into your userChrome.css file.
 
 ## Enable experimental vertical tabs
 1. Go to `about:config`
-2. Enable sidebar.revamp and sidebar.verticalTabs
+2. Enable `sidebar.revamp` and `sidebar.verticalTabs`
 3. Restart firefox
 
 ## Features
