@@ -1,0 +1,30 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Dev.Naamloos.FirefoxTheme.ViewModels"
+			 xmlns:ns="clr-namespace:Dev.Naamloos.FirefoxTheme"
+             mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="500"
+             x:Class="Dev.Naamloos.FirefoxTheme.ProfilePicker"
+             x:DataType="vm:ProfilePickerViewModel">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="{x:Static ns:Resources.SelectProfile}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0"/>
+        <ScrollViewer Grid.Row="1">
+            <ListBox ItemsSource="{Binding ProfileNames}" SelectedIndex="{Binding SelectedProfileIndex}" SelectionMode="Single">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding}" Margin="5"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </ScrollViewer>
+        <Button Content="{x:Static ns:Resources.SelectProfileButton}" Grid.Row="2"/>
+    </Grid>
+</UserControl>
