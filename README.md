@@ -29,3 +29,6 @@ This is a WIP project specifically for installing Firefox userChrome themes. Thi
 This also means that smaller patches could be toggled as separate themes!
 
 ### (Early) Screenshots
+
+![afbeelding](https://github.com/user-attachments/assets/76e7143a-1118-4ea1-904f-5239b01b2698)
+![afbeelding](https://github.com/user-attachments/assets/5591975b-bb0e-4b70-a490-8019b4e37514)
